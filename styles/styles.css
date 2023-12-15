@@ -2,7 +2,7 @@
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: url("fonts/inter-400.woff2") format("woff2");
+  src: url("../fonts/inter-400.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -10,7 +10,7 @@
   font-family: "Inter";
   font-style: normal;
   font-weight: 700;
-  src: url("fonts/inter-700.woff2") format("woff2");
+  src: url("../fonts/inter-700.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -18,27 +18,33 @@
   font-family: "Inter";
   font-style: normal;
   font-weight: 900;
-  src: url("fonts/inter-900.woff2") format("woff2");
+  src: url("../fonts/inter-900.woff2") format("woff2");
   font-display: swap;
 }
 
 body {
   font-family: "Inter", sans-serif;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 1.375;
   color: #2D3440;
   background-color: #FEAFC3;
 }
 
-.button {
+button {
+  border: none;
+  font: inherit;
   font-family: inherit;
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 12px 32px;
+  line-height: 20px;
+  text-decoration: none;
+  border-radius: 26px;
   font-size: 16px;
-  line-height: 16px;
   font-weight: 700;
   text-align: center;
   color: #2D3440;
   background-color: #FCFCFC;
-  text-decoration: none;
   text-transform: uppercase;
 }
 
@@ -48,29 +54,74 @@ body {
   color: #FCFCFC;
   background-color: #FEAFC3;
 }
-.gift-list {
-  color: #2D3440;
+
+.gift-card {
   background-color: #FF7799;
 }
-.main-inner .product-card-title {
-  color: #2D3440;
+
+.gift-card-title {
+  font-weight: 700;
+  line-height: 30px;
+  font-size: 24px;
 }
 
-.navigation-link {
-  font-family: "inter", sans-serif;
-  line-height: 22px;
+.gift-card-description{
+  font-weight: 400;
+  
+}
+.main-inner .product-card-title {
   font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+.main-inner .product-card-description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  margin-bottom: 24px;
+}
+.inner-header-title{
+
+  margin: 0 auto;
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 46px;
+  text-align: center;
+}
+.navigation-link {
+  border-radius: 30px;
+  display:flex;
+  line-height: 20px;
   text-align: center;
   color: #2D3440;
-  background-color: #FEAFC3;
+  list-style-type: disc;
   text-decoration: none;
   text-transform: uppercase;
+}
+
+.advantages {
+  background-color: #FCFCFC;
+  background-image: url("../images/wafel.jpg");
+}
+
+.advantages-title {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+  text-align: center;
+}
+
+.advantages-description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #565C66;
 }
 
 .main-index {
   color: #fcfcfc;
   background-color: #2D3440;
-  background-image: url("images/index-bg.jpg");
+  background-image: url("../images/index-bg.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
@@ -82,7 +133,7 @@ body {
 
 /* Title */
 .advantages-title {
-  font-family: "inter", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 32px;
   line-height: 35px;
   text-transform: uppercase;
@@ -109,7 +160,11 @@ body {
 }
 
 .product-card-description {
-  color: #565C66;
+  margin: 0px;
+  margin-bottom: 48px; 
+  font-size: 18px;
+  line-height: 24px;
+  list-style-type:none;
 }
 
 /* Price */
@@ -199,7 +254,7 @@ body {
 }
 .page-footer-title {
   font-family: "inter", sans-serif;
-  font-size: 20px;
+  font-size: 24px;
   line-height: 28px;
   font-weight: 700;
   color: #2D3440;
@@ -209,10 +264,18 @@ body {
 .newsletter-title {
   font-family: "inter", sans-serif;
   font-size: 16px;
-  line-height: 20px;
+  line-height: 22px;
   font-weight: 400;
   color: #565C66;
   text-transform: uppercase;
+}
+
+.newsletter-form button {
+  background-color: #FF2F64;
+  color: #fcfcfc;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .newsletter-advice {
@@ -225,10 +288,48 @@ body {
   background-color: #FCFCFC;
 }
 
-.footer-contacts {
-  color: #2D3440;
+.footer-contacts-1 {
   background-color: #FCFCFC;
+  background-image: url("../images/back-ground-1.jpg");
+  color: #2D3440;
 }
+
+.footer-contacts-1 address {
+  background-color: #FCFCFC
+}
+
+.footer-contacts-2 {
+  background-color: #FCFCFC;
+  background-image: url("../images/back-ground-2.jpg");
+  color:#2D3440;
+}
+
+.footer-contacts-2 .about-text-1 {
+  color: #565C66;
+  font-weight: 400;
+  line-height: 22px;
+  font-size: 16px;
+}
+
+.footer-contacts-2 .about-text-2 {
+  color: #2D3440;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.footer-contacts-2 small {
+  color: #565C66;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.footer-button {
+  background-color: #FF2F64;
+  color: #FCFCFC ;
+}
+
 .page-footer .about-text {
   color: #2D3440;
 }
@@ -237,7 +338,7 @@ body {
   font-size: 14px;
   line-height: 20px;
   font-weight: 700;
-  color: #FCFCFC;
+  color: #2D3440;
 }
 
 .footer-contacts-map-link {
