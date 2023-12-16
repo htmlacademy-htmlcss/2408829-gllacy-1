@@ -1,0 +1,379 @@
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/inter-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/inter-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/inter-900.woff2") format("woff2");
+  font-display: swap;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 1.375;
+  color: #2D3440;
+  background-color: #FEAFC3;
+}
+
+button {
+  border: none;
+  font: inherit;
+  font-family: inherit;
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 12px 32px;
+  line-height: 20px;
+  text-decoration: none;
+  border-radius: 26px;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  color: #2D3440;
+  background-color: #FCFCFC;
+}
+
+/* Pages */
+
+.page-header {
+  color: #FCFCFC;
+  background-color: #FEAFC3;
+}
+
+.gift-card {
+  background-color: #FF7799;
+}
+
+.gift-card-title {
+  font-weight: 700;
+  line-height: 30px;
+  font-size: 24px;
+}
+
+.gift-card-description{
+  font-weight: 400;
+  
+}
+.main-inner .product-card-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+.main-inner .product-card-description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  margin-bottom: 24px;
+}
+
+.cone-product-card-title {
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 46px;
+}
+
+.cone-product-card-description {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.cone-product-card-button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.inner-header-title{
+
+  margin: 0 auto;
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 46px;
+  text-align: center;
+}
+.navigation-link {
+  border-radius: 30px;
+  display:flex;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+  color: #2D3440;
+  list-style-type: disc;
+  text-decoration: none;
+}
+
+.advantages {
+  background-color: #FCFCFC;
+  background-image: url("../images/wafel.jpg");
+}
+
+.advantages-title {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+  text-align: center;
+}
+
+.advantages-description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #565C66;
+}
+
+.main-index {
+  color: #fcfcfc;
+  background-color: #2D3440;
+  background-image: url("../images/index-bg.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+/* List */
+.advantages-list {
+  text-align: center;
+}
+
+/* Title */
+.advantages-title {
+  font-family: "Inter", sans-serif;
+  font-size: 32px;
+  line-height: 35px;
+  text-transform: uppercase;
+}
+
+/* Index columns */
+.index-columns {
+  color: #2D3440;
+  background-color: #fbf7f4;
+  background-image: url("../images/bg-noisy.png");
+}
+
+/* Services*/
+
+.services {
+  text-transform: uppercase;
+}
+
+/* Title */
+.services-title {
+  font-size: 32px;
+  line-height: 35px;
+  font-weight: 700;
+}
+
+.product-card-description {
+  margin: 0px;
+  margin-bottom: 48px; 
+  font-size: 18px;
+  line-height: 24px;
+  list-style-type:none;
+}
+
+/* Price */
+.services-list {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 700;
+}
+
+.services-price {
+  color: #af7842;
+}
+
+/* Title */
+.gallery-title {
+  font-size: 32px;
+  line-height: 35px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.contacts {
+  font-weight: 700;
+}
+
+/* Title */
+.contacts-title {
+  font-size: 32px;
+  line-height: 35px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.contacts-address {
+  font-style: normal;
+}
+
+/* Subtitle */
+.contacts-subtitle {
+  font-size: 20px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #af7842;
+}
+
+/* Phone */
+.contacts-phone {
+  font-size: 24px;
+  line-height: 29px;
+  text-decoration-line: underline;
+  text-transform: uppercase;
+  color: #242424;
+}
+
+/* Title */
+.appointment-title {
+  font-size: 32px;
+  line-height: 35px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* List */
+.appointment-form {
+  color: #595959;
+}
+
+/* Label */
+.form-label {
+  line-height: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.page-footer {
+  font-size: 14px;
+  font-weight: 700;
+  color: #2D3440;
+  background-color: #FEAFC3;
+  background-image: url("");
+  background-repeat: repeat;
+}
+
+.page-footer .htmlacademy-link {
+  font-size: 14px;
+  color: #2D3440;
+}
+.page-footer-title {
+  font-family: "inter", sans-serif;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  color: #2D3440;
+  text-transform: uppercase;
+}
+
+.newsletter-title {
+  font-family: "inter", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #565C66;
+  text-transform: uppercase;
+}
+
+.newsletter-form button {
+  background-color: #FF2F64;
+  color: #fcfcfc;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.newsletter-advice {
+  background-image: url("../images/advice.jpg");
+  background-color: #FCFCFC;
+}
+
+.newsletter-mailing {
+  background-image: url("../images/stripe.jpg");
+  background-color: #FCFCFC;
+}
+
+.footer-contacts-1 {
+  background-color: #FCFCFC;
+  background-image: url("../images/back-ground-1.jpg");
+  color: #2D3440;
+}
+
+.footer-contacts-1 address {
+  background-color: #FCFCFC
+}
+
+.footer-contacts-2 {
+  background-color: #FCFCFC;
+  background-image: url("../images/back-ground-2.jpg");
+  color:#2D3440;
+}
+
+.footer-contacts-2 .about-text-1 {
+  color: #565C66;
+  font-weight: 400;
+  line-height: 22px;
+  font-size: 16px;
+}
+
+.footer-contacts-2 .about-text-2 {
+  color: #2D3440;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.footer-contacts-2 small {
+  color: #565C66;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.footer-button {
+  background-color: #FF2F64;
+  color: #FCFCFC ;
+}
+
+.page-footer .about-text {
+  color: #2D3440;
+}
+
+.footer-contacts-address {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #2D3440;
+}
+
+.footer-contacts-map-link {
+  font-family: "inter", sans-serif;
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #FCFCFC;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+.footer-social .button {
+  color: #2D3440;
+  background-color: #FEAFC3;
+}
+.footer-social {
+  color: #2D3440;
+  background-color: #FEAFC3;
+}
