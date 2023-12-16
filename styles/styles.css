@@ -45,7 +45,6 @@ button {
   text-align: center;
   color: #2D3440;
   background-color: #FCFCFC;
-  text-transform: uppercase;
 }
 
 /* Pages */
@@ -80,6 +79,25 @@ button {
   line-height: 22px;
   margin-bottom: 24px;
 }
+
+.cone-product-card-title {
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 46px;
+}
+
+.cone-product-card-description {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.cone-product-card-button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+}
+
 .inner-header-title{
 
   margin: 0 auto;
@@ -91,12 +109,13 @@ button {
 .navigation-link {
   border-radius: 30px;
   display:flex;
+  font-size: 16px;
+  font-weight: 400;
   line-height: 20px;
   text-align: center;
   color: #2D3440;
   list-style-type: disc;
   text-decoration: none;
-  text-transform: uppercase;
 }
 
 .advantages {
