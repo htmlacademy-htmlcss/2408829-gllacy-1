@@ -734,7 +734,7 @@ ul, ol {
   grid-template-columns: auto 500px;
   gap: 135px;
   align-items: center;
-  background-image: url("../images/back-ground-1.png");
+  background-image: url("../images/back-ground-1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 16px;
@@ -804,7 +804,7 @@ ul, ol {
   box-sizing: border-box;
   padding: 64px;
   padding-right: 0;
-  background-image: url("../images/back-ground-2.png");
+  background-image: url("../images/back-ground-2.jpg");
   background-repeat: no-repeat;
   /*background-position: center;*/
   border-radius: 16px;
