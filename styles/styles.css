@@ -1,4 +1,4 @@
-ы/* Шрифты */
+/* Шрифты */
 @font-face {
   font-family: "Inter";
   font-style: normal;
@@ -292,16 +292,17 @@ ul, ol {
 }
 .cone-product-card-right .slider-inner-picture-mini {
   position: relative;
-  text-align: center;
 }
 .slider-inner-picture::before{
+  margin-top: 100px;
+  margin-right: 56.92px;
   display: block;
   content: "";
   position: absolute;
-  width: 312px;
+  width: 327.15px;
   height: 312px;
   z-index: -1;
-  background-color: #FCFCFC;
+  background-color: #FFCBD8;
   border-radius: 50%;
 }
 .cone-product-card-title {
@@ -309,6 +310,7 @@ ul, ol {
   font-size: 36px;
   line-height: 46px;
   margin-bottom: 24px;
+  text-align: left;
 }
 .cone-product-card-description {
   font-size: 18px;
@@ -316,6 +318,7 @@ ul, ol {
   line-height: 24px;
   margin-bottom: 48px;
   width: 414px;
+  text-align: left;
 }
 .cone-product-card-button {
   font-weight: 700;
@@ -392,6 +395,7 @@ ul, ol {
 .gift-card-left{
   margin-top: 36px;
   margin-left: 36px;
+  text-align: left;
 }
 .gift-card-right {
   margin-left: 0px;
@@ -444,7 +448,7 @@ ul, ol {
   text-align: center;
 }
 .product-card{
-
+  text-align: center;
 }
 .product-card-button {
   background-color: #FF2F64;
@@ -864,6 +868,7 @@ ul, ol {
   display: grid;
   grid-template-columns: repeat(2, auto);
   margin-right: 200px;
+  min-width: 356px;
 }
 .footer-info-provider{
   font-size: 14px;
