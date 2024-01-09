@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Каталог</title>
-    <link rel="stylesheet" href="styles/catalog-styles.css">
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <header class="page-header">
@@ -41,8 +41,8 @@
       </nav>
     </header>
 
-    <main class="main-inner">
-      <section class="catalog-products">
+    <main class="main-conteiner main-inner general-layout">
+      <section class="catalog-products catalog-product-list">
         <ul class="product-list">
           <li class="product-card">
             <a class="product-card-link" href="#">
@@ -154,42 +154,54 @@
           </li>
         </ul>
       </section>
-      <footer class="page-footer">
-        <div class="footer-social">
-            <ul class="footer-social-list">
-              <li class="footer-social-item">
-                <a class="button" href="#">
-                  <span class="visually-hidden">Твиттер</span>
-                </a>
-              </li>
-              <li class="footer-social-item">
-                <a class="button" href="#">
-                  <span class="visually-hidden">ВКонтакте</span>
-                </a>
-              </li>
-              <li class="footer-social-item">
-                <a class="button" href="#">
-                  <span class="visually-hidden">Инстаграм</span>
-                </a>
-              </li>
-            </ul>
-            <ul class="footer-about">
-                <li class="footer-about-text">
-                    <p class="about-text">Для поставщиков</p>
-                </li>
-                <li class="footer-about-text">
-                    <p class="about-text">О производстве</p>
-                </li>
-                <li class="footer-about-text">
-                    <p class="about-text">Наши документы</p>
-                </li>
-                <li class="footer-about-text">
-                    <p class="about-text">Экологические стандарты</p>
-                </li>
-            </ul>
-            <p class="about-text">Сделано в <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a></p>
-          </div>
-    </footer>
+      <section class="catalog-slider">
+        <button class="catalog-button button">Показать ещё</button>
+      </section>
     </main>
+    
+    <footer class="page-footer general-layout">
+      <ul class="footer-social footer-social-1">
+        <li class="footer-social-item">
+            <a class="footer-social-link footer-social-telegramm button" href="https://telegramm.com/htmlacademy">
+              <span class="visually-hidden">Телеграмм</span>
+            </a>
+        </li>
+        <li class="footer-social-item">
+            <a class="footer-social-link footer-social-vk button" href="https://vk.com/htmlacademy">
+              <span class="visually-hidden">ВКонтакте</span>
+            </a>
+        </li>
+        <li class="footer-social-item">
+            <a class="footer-social-link footer-social-insta button" href="https://instagram.com/htmlacademy">
+              <span class="visually-hidden">Инстаграм</span>
+            </a>
+          
+        </li>
+      </ul>
+      
+      
+      <ul class="footer-info">
+        <li class="footer-info-item">
+            <a class="footer-info-provider footer-heart" href="#">Для поставщиков</a>
+        </li>
+        <li class="footer-info-item">
+            <a class="footer-info-link" href="#">Наши документы</a>
+        </li>
+        <li class="footer-info-item">
+            <a class="footer-info-link" href="#">О производстве</a>
+        </li>
+        <li class="footer-info-item">
+            <a class="footer-info-link" href="#">Экологические стандарты</a>
+        </li>
+    </ul>
+
+    <p class="about-text">Сделано в <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a></p>
+    <div class="footer-copyright">
+        <img class="copyright-logo" src="./images/logo-htmlacademy.png" width="93" height="27" alt="HTML Academy">
+        <p class="copyright-text">Сделано в <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html
+                academy</a> © 2024
+        </p>
+    </div>
+    </footer>
   </body>
 </html>
