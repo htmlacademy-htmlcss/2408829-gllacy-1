@@ -26,6 +26,7 @@
 html {
   height: 100%;
   box-sizing: border-box;
+  position: relative;
 }
 
 body {
@@ -431,32 +432,104 @@ ul, ol {
   line-height: 46px;
   text-align: center;
 }
-.product-list {
-  display: flex;
-  grid-template-columns: repeat(4,1fr);
-  gap: 91px 30px;
-  justify-content: space-between;
-  margin: 0;
-  padding: 0;
-  grid-gap: 60px;
+.catalog-products{
+  margin-bottom: 80px;
+  text-align: center;
 }
 .product-title{
-  margin-bottom: 107px;
+  font-family: "Inter", sans-serif;
   font-size: 32px;
-  font-weight: 900;
   line-height: 46px;
-  text-align: center;
+  font-weight: 900;
+  color: #2D3440;
+}
+.catalog-products {
+  margin-bottom: 16px;
+}
+.product-list{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 91px 30px;
+  max-width: 1170px;
+  max-height: 1076px;
 }
 .product-card{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  max-width: 270px;
+  min-height: 250px; 
+  background-color: #FCFCFC;
+  border-radius: 8px;
+  text-align: center;
+  padding: 0 40px 25px 40px;
+  max-width: 270px;
+  max-height: 332px;
+}
+.product-card-link{
+  text-decoration: none;
+  display: block;
+  position: relative;
   text-align: center;
 }
-.product-card-button {
-  background-color: #FF2F64;
-  width: 32px;
-  height: 32px;
+.product-card-title {
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  font-style: normal;
+  text-align: center;
+  vertical-align: top;
+  color: #2D3440;
+  margin-bottom: 8px;
+}
+.product-card-description{
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  font-style: bold;
+  text-align: center;
+  vertical-align: top;
+  text-decoration: none;
+  color: #565C66;
+  margin-bottom: 16px;
+}
+.catalog-product-list {
+  min-width: 1170px;
+  min-height: 1076px;
+}
+.catalog-slider {
+  min-width: 1365px;
+  min-height: 126px;
+  margin-top: 260px;
+}
+.button-basket{
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: regular;
+  text-align: left;
+  text-decoration: none;
+  color: #2D3440;
+  background-image: url("../images/basket-white.svg ");
   border-radius: 26px;
-  background-image: url("../images/basket-white.svg");
-  background-position: center;
+  background-color: #FCFCFC;
+  background-position: 18px;
+  padding: 6px 18px 6px 40px;
+  display: inline-block;
+}
+.catalog-button {
+  background-color: #FCFCFC;
+  min-width: 179px;
+  min-height: 44px;
+  border-radius: 26px;
+  text-align: center;
+}
+.navigation-form-basket{
+  right: 0px;
+  min-width: 344px;
+  padding: 50px
 }
 
 .gift-card-description{
@@ -464,13 +537,7 @@ ul, ol {
   padding-top: 26px;
   padding-bottom: 26px;
 }
-.product-card-description {
-  margin: 0px;
-  margin-bottom: 48px; 
-  font-size: 18px;
-  line-height: 24px;
-  list-style-type:none;
-}
+
 .index-columns {
   display: flex;
   justify-content: space-between;
@@ -624,7 +691,6 @@ ul, ol {
   line-height: 30px;
   font-weight: 700;
   color: #2D3440;
-  text-transform: uppercase;
   font-style: bold;
   text-align: left;
   display: block;
@@ -649,10 +715,10 @@ ul, ol {
   border-radius: 16px;
   margin: 0 auto;
   box-sizing: border-box;
-  /*min-width: 570px;
+  min-width: 570px;
   min-height: 224px;
   max-width: 570px;
-  max-height: 224px;*/
+  max-height: 224px;
 }
 .newsletter-title {
   font-family: "inter", sans-serif;
@@ -661,8 +727,8 @@ ul, ol {
   font-weight: 400;
   color: #565C66;
   margin-bottom: 42px;
+  
 }
-
 .field{
   color: #2D3440;
   font-size: 16px;
@@ -671,26 +737,19 @@ ul, ol {
   padding: 13px 16px;
   border-radius: 4px;
   margin-left: 26px;
-  /*height: 24px;
-  */
-  
-  
+  /*height: 24px;*/  
 } 
-/*.newsletter {
+.newsletter {
   display: flex;
   justify-content: space-between;
   margin: 0;
   padding: 0;
   border-radius: 26px;
-}*/
-
-
-
-
-.newsletter-advice .newsletter-title {
-  margin-left: 32px;
-  margin-top: 32.59px;
 }
+
+
+
+
 .newsletter-advice .newsletter-description {
   font-family: "inter", sans-serif;
   font-size: 24px;
