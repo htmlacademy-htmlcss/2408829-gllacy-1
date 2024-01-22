@@ -178,7 +178,7 @@ ul, ol {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 16px;
-  font-weight: 700px;
+  font-weight: 700;
 }
 .navigation-in-catalog-item:first-child::after{
   position: absolute;
@@ -218,7 +218,6 @@ ul, ol {
   margin-right: 17px;
 }
 .navigation-user {
-  max-width: auto;
   margin-left: auto;
 }
 
@@ -498,7 +497,6 @@ ul, ol {
   position: relative;
   display: flex;
   flex-direction: column;
-  max-width: 270px;
   min-height: 250px; 
   background-color: #FCFCFC;
   border-radius: 8px;
@@ -540,11 +538,11 @@ ul, ol {
   min-width: 1170px;
   min-height: 1076px;
 }
-.catalog-slider {
+/*.catalog-slider {
   min-width: 1365px;
   min-height: 126px;
   margin-top: 260px;
-}
+}*/
 .button-basket{
   font-family: "Inter", sans-serif;
   font-size: 14px;
@@ -587,13 +585,8 @@ ul, ol {
 .advantages {  
   background-color: #FCFCFC;
   background-image: url("../images/wafel.jpg");
-  
-  
-  
-  
   padding: 24px;
   border-radius: 26px;
-  margin-bottom: 80px;
 }
 
 .advantages-wrapper {
@@ -689,14 +682,8 @@ ul, ol {
 
 
 .newsletter-advice {
-  /*border-radius: 26px;
-  min-width: 570px;
-  min-height: 224px;
-  max-width: 570px;
-  max-height: 224px;*/
   display: flex;
   justify-content: space-between;
-  margin-bottom: 76px;
   flex-wrap: wrap;
 }
 
@@ -834,7 +821,6 @@ ul, ol {
   background-size: cover;
   border-radius: 16px;
   padding:  64px 64px 64px 100px;
-  margin-bottom: 82px;
   /*background-color: #FCFCFC;
   
   color: #2D3440;*/
@@ -951,6 +937,9 @@ ul, ol {
 .footer-social{
   display: flex;
   flex-wrap: wrap;
+}
+.footer-social-fb{
+  background-image: url("../images/fb.svg");
 }
 .footer-social-1{
   margin-right: 318px;
