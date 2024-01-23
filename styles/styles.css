@@ -395,7 +395,10 @@ ul, ol {
   display: inline-block;
   width: 24px;
   height: 24px;
+  border: 2px solid rgba(252, 252, 252, 0.2);
   background-position: center;
+  box-shadow: 0 4px 12px 1px rgb(45 52 64 / 10%);
+  background-clip: padding-box;
   margin: 0;
   padding: 0;
 }
@@ -766,8 +769,10 @@ ul, ol {
   border-radius: 26px;
 }
 
-
-
+.footer-social {
+  display: flex;
+  flex-wrap: wrap;
+}
 
 .newsletter-advice .newsletter-description {
   font-family: "inter", sans-serif;
@@ -936,7 +941,7 @@ ul, ol {
 }
 .footer-social{
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 .footer-social-fb{
   background-image: url("../images/fb.svg");
