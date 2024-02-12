@@ -433,7 +433,7 @@ ul, ol {
   background-image: url("../images/telegram.svg");
 }
 
-.footer-social-insta{
+.footer-social-yt{
   background-image: url("../images/youtube.svg");
 }
 .gift-catalog{
@@ -676,6 +676,7 @@ ul, ol {
   min-width: 16px;
   min-height: 16px;
   max-width: 16px;
+  padding: 0;
   background: #FFFFFF;
   border: 6px solid #242424;
   border-radius: 50%;
