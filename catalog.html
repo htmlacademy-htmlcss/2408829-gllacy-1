@@ -81,23 +81,123 @@
       
       <section class="product product-inner">
         <h2 class="visually-hidden">Список товаров с фильтрами</h2>
-        <form class="catalog-form" action="https://echo.htmlacademy.ru/" method="get">
-          <div class="catalog-filter">
-            <label class="catalog-filter-title">Сортировка:</label>
-            <select class="select-control" name="sorting">
-              <option value="popular">по популярности</option>
-              <option value="cheap">по возрастанию</option>
-              <option value="expensive">по убыванию</option>
-            </select>  
-          </div>
-          <fieldset class="catalog-filter">
-            <div class="range-price">
-              <label class="catalog-filter-title">Цена:</label>
-              <label class="range-price-filter"></label>
-              <input class="range-input" type="text" name="min-price" value="100Руб">
-            </div>
-          </fieldset>
-        </form>
+            <form class="catalog-form" action="https://echo.htmlacademy.ru/" method="get">
+                <div class="catalog-filter">
+                    <label class="catalog-filter-title">Сортировка:</label>
+                    <br>
+                    <select class="select-control" name="sorting">
+                        <option value="popular">по популярности</option>
+                        <option value="cheap">по возрастанию</option>
+                        <option value="expensive">по убыванию</option>
+                    </select>
+                </div>
+                <fieldset class="catalog-filter">
+                    <div class="range-price">
+                        <label class="catalog-filter-title">Цена:</label>
+                        <label class="range-price-filter">
+                            <input class="range-input" type="text" name="min-price" value="100">
+                            ₽ –
+                        </label>
+                        <label class="range-price-filter">
+                            <input class="range-input" type="text" name="max-price" value="500">
+                            ₽
+                        </label>
+                    </div>
+                    <div class="range-price-toddler">
+                        <div class="range-toddler">
+                            <div class="range-scope">
+                                <div class="range-rail">
+                                    <button class="range-toggle toggle-min btn" type="button">
+                                        <span class="visually-hidden">Изменить минимальную цену</span>
+                                    </button>
+                                    <button class="range-toggle toggle-max btn" type="button">
+                                        <span class="visually-hidden">Изменить максимальную цену</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset class="catalog-filter">
+                    <label class="catalog-filter-title">Жирность:</label>
+                    <ul class="fat-checkbox">
+                        <li class="fat-checkbox-item">
+                            <label class="fat-checkbox-control">
+                                <input class="fat-control-input" type="checkbox" name="fat-content" value="0%">
+                                <span class="fat-control-type"></span>
+                                0%
+                            </label>
+                        </li>
+                        <li class="fat-checkbox-item">
+                            <label class="fat-checkbox-control">
+                                <input class="fat-control-input" type="checkbox" name="fat-content" value="до 10%"
+                                    checked>
+                                <span class="fat-control-type"></span>
+                                до 10%
+                            </label>
+                        </li>
+                        <li class="fat-checkbox-item">
+                            <label class="fat-checkbox-control">
+                                <input class="fat-control-input" type="checkbox" name="fat-content" value="до 30%">
+                                <span class="fat-control-type"></span>
+                                до 30%
+                            </label>
+                        </li>
+                        <li class="fat-checkbox-item">
+                            <label class="fat-checkbox-control">
+                                <input class="fat-control-input" type="checkbox" name="fat-content" value="свыше 30%">
+                                <span class="fat-control-type"></span>
+                                выше 30%
+                            </label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <fieldset class="catalog-filter">
+                    <legend class="catalog-filter-title">Наполнители:</legend>
+                    <ul class="filler-checkbox">
+                        <li class="filler-checkbox-item filler-checkbox-item-checkbox">
+                            <label class="filler-checkbox-control">
+                                <input class="filler-control-input" type="checkbox" name="filler-content"
+                                    value="chocolate" checked>
+                                <span class="filler-control-type"></span>
+                                шоколадные
+                            </label>
+                        </li>
+                        <li class="filler-checkbox-item filler-checkbox-item-checkbox">
+                            <label class="filler-checkbox-control">
+                                <input class="filler-control-input" type="checkbox" name="filler-content" value="sugar"
+                                    checked>
+                                <span class="filler-control-type"></span>
+                                сахарные посыпки
+                            </label>
+                        </li>
+                        <li class="filler-checkbox-item filler-checkbox-item-checkbox">
+                            <label class="filler-checkbox-control">
+                                <input class="filler-control-input" type="checkbox" name="filler-content"
+                                    value="fruits">
+                                <span class="filler-control-type"></span>
+                                фрукты
+                            </label>
+                        </li>
+                        <li class="filler-checkbox-item filler-checkbox-item-checkbox">
+                            <label class="filler-checkbox-control">
+                                <input class="filler-control-input" type="checkbox" name="filler-content"
+                                    value="syrups">
+                                <span class="filler-control-type"></span>
+                                сиропы
+                            </label>
+                        </li>
+                        <li class="filler-checkbox-item filler-checkbox-item-checkbox">
+                            <label class="filler-checkbox-control">
+                                <input class="filler-control-input" type="checkbox" name="filler-content" value="jams">
+                                <span class="filler-control-type"></span>
+                                джемы
+                            </label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <button class="catalog-form-btn btn-transparent btn" type="submit">Применить</button>
+            </form>
         <ul class="product-list">
           <li class="product-card">
             <img class="product-card-image" src="images/ice_cream.jpg" width="168" height="168" alt="Шарик мороженого">
@@ -262,7 +362,7 @@
       </section>
     </main>
     
-    <footer class="page-footer general-layout">
+    <footer class="page-footer">
       <ul class="footer-social footer-social-1">
         <li class="footer-social-item">
             <a class="footer-social-link footer-social-telegramm button" href="https://telegramm.com/htmlacademy">
@@ -275,8 +375,8 @@
             </a>
         </li>
         <li class="footer-social-item">
-            <a class="footer-social-link footer-social-insta button" href="https://instagram.com/htmlacademy">
-              <span class="visually-hidden">Инстаграм</span>
+            <a class="footer-social-link footer-social-yt button" href="https://youtube.com/htmlacademy">
+              <span class="visually-hidden">Youtube</span>
             </a>
           
         </li>
@@ -285,7 +385,7 @@
       
       <ul class="footer-info">
         <li class="footer-info-item">
-            <a class="footer-info-provider footer-heart" href="#">Для поставщиков</a>
+            <a class="footer-info-provider footer-heart" href="#">Для&nbsp;поставщиков</a>
         </li>
         <li class="footer-info-item">
             <a class="footer-info-link" href="#">Наши документы</a>
@@ -296,15 +396,14 @@
         <li class="footer-info-item">
             <a class="footer-info-link" href="#">Экологические стандарты</a>
         </li>
-    </ul>
+      </ul>
 
-    <p class="about-text">Сделано в <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a></p>
-    <div class="footer-copyright">
-        <img class="copyright-logo" src="./images/logo-htmlacademy.png" width="93" height="27" alt="HTML Academy">
-        <p class="copyright-text">Сделано в <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html
-                academy</a> © 2024
-        </p>
-    </div>
+      <div class="footer-copyright">
+          <img class="copyright-logo" src="./images/logo-htmlacademy.png" width="93" height="27" alt="HTML Academy">
+          <p class="copyright-text">Сделано в <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html
+                  academy © 2024 </a>
+          </p>
+      </div>
     </footer>
   </body>
 </html>
