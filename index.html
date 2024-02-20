@@ -14,13 +14,13 @@
       <nav class="navigation">
         <ul class="navigation-list">
           <li class="navigation-item navigation-item-catalog">
-            <a class="navigation-link" href="catalog.html">Каталог</a>
+            <p class="navigation-link">Каталог</p>
             <ul class="navigation-catalog navigation-item-inner">
               <li class="navigation-in-catalog-item">
                 <a class="navigation-catalog-link" href="#">Новинки</a>
               </li>
               <li class="navigation-in-catalog-item">
-                <a class="navigation-catalog-link" href="#">Сливочное</a>
+                <a class="navigation-catalog-link" href="catalog.html">Сливочное</a>
               </li>
               <li class="navigation-in-catalog-item">
                 <a class="navigation-catalog-link" href="#">Щербеты</a>
@@ -50,21 +50,45 @@
             <button class="button-search button-transparent button">
               <span class="visually-hidden">Поиск</span>
             </button>
-            <div></div>
+            <div class="navigation-item-inner navigation-form-search" id="search">
+              <label aria-label="введите поисковый запрос">
+                <input class="navigation-item-input" type="search" name="website-search" placeholder="Поиск по сайту">
+              </label>
+            </div>
           </li>
           <li  class="navigation-item navigation-item-active">
             <button class="button-enter button-transparent button">Вход</button>
+            <div class="navigation-item-inner navigation-form-enter">
+              <form class="navigation-form" action="https://echo.htmlacademy.ru/" method="post">
+                <fieldset class="login">
+                  <legend class="login-title">Личный кабинет</legend>
+                  <label class="login-label" aria-label="введите адрес электронной почты">
+                    <input class="login-input" type="text" id="mail" name="mail" placeholder="email@example.com" required>
+                  </label>
+                  <label class="login-label" aria-label="введите пароль">
+                    <input class="login-input" type="text" id="password" name="password" placeholder="Пароль">
+                  </label>
+                  <button class="button-login button button-pink" type="submit">Войти</button>
+                  <a class="login-link login-link-password" href="#">Забыли пароль?</a>
+                  <a class="login-link login-link-login" href="#">Регистрация</a>
+                </fieldset>
+              </form>
+            </div>
           </li>
 
-          <li class="navigation-item navigation-item-active navigation-form-basket" >
+          <li class="navigation-item navigation-item-active" >
             <button class="button-basket button-transparent button">Корзина</button>
+            <div class="navigation-item-inner navigation-form-basket">
+              <p class="basket-text">Ваша корзина пока пуста</p>
+            </div>
           </li>
         </ul>
       </nav>
     </header>
 
     <main class="main-container main-inner general-layout">
-      <section class="inner-header">          
+      <h1 class="visually-hidden">Магазин мороженного "Глейси"</h1>
+      <section class="gallery">          
         <ul class="all-sliders">
           <li class="slider-item slider-1">
             <div class="slider" id="slider-1">
@@ -82,17 +106,84 @@
                 </button>
               </div>
               <div class="slider-inner-picture-mini">
-                <img class="cone-product-card-image" src="images/cone2.png" width="66" height="150" alt="Мороженое в рожке">
+                <img class="cone-product-card-image" src="images/cone_mini2.png" width="66" height="150" alt="Мороженое в рожке c бананом">
               </div>
 
               <div class="slider-inner-picture-mini">
-                <img class="cone-product-card-image" src="images/cone3.png" width="66" height="150" alt="Мороженое в рожке">
+                <img class="cone-product-card-image" src="images/cone_mini3.png" width="66" height="150" alt="Мороженое в рожке с маршмеллоу">
               </div>
               
+          </li>
+
+          <li class="slider-item slider-2">
+            <div class="slider" id="slider-2">
+              <h2 class="cone-product-card-title">Сливочное мороженое со вкусом банана</h2>
+              <p class="cone-product-card-description">Сливочное мороженое с ярким банановым вкусом подарит вам свежесть и 
+                                                        наслаждение даже в самый жаркий день. </p>
+              <button class="cone-product-card-button button-white button">Заказать</button>
+            </div>     
+            <div class="slider-inner-picture">
+              <img class="cone-product-card-image" src="images/cone2.jpg" width="306" height="507" alt="Мороженое в рожке">
+              <button class="cone-button-prev button button-transparent">
+                <span class="visually-hidden">Предыдущая страница</span>
+              </button>
+              <button class="cone-button-next button button-transparent">
+                <span class="visually-hidden">Следующая страница</span>
+              </button>
+            </div>
+            <div class="slider-inner-picture-mini">  
+              <img class="cone-product-card-image" src="images/cone_mini3.png" width="66" height="150" alt="Мороженое в рожке с маршмеллоу">
+            </div>
+
+            <div class="slider-inner-picture-mini">
+              <img class="cone-product-card-image" src="images/cone_mini1.png" width="66" height="150" alt="Мороженое в рожке с джемом">
+            </div>   
+          </li>
+
+          <li class="slider-item slider-3">
+            <div class="slider" id="slider-3">
+              <h2 class="cone-product-card-title">Карамельный пломбир с маршмеллоу</h2>
+              <p class="cone-product-card-description">Необычный сладкий десерт с карамельным топпингом и косочками зефира завоюет сердца сладкоежек всех возрастов.</p>
+              <button class="cone-product-card-button button-white button">Заказать</button>
+            </div>     
+            <div class="slider-inner-picture">
+              <img class="cone-product-card-image" src="images/cone3.jpg" width="306" height="507" alt="Мороженое в рожке">
+              <button class="cone-button-prev button button-transparent">
+                <span class="visually-hidden">Предыдущая страница</span>
+              </button>
+              <button class="cone-button-next button button-transparent">
+                <span class="visually-hidden">Следующая страница</span>
+              </button>
+            </div>
+            <div class="slider-inner-picture-mini">  
+              <img class="cone-product-card-image" src="images/cone_mini1.png" width="66" height="150" alt="Мороженое в рожке с джемом">
+            </div>
+
+            <div class="slider-inner-picture-mini">
+              <img class="cone-product-card-image" src="images/cone_mini2.png" width="66" height="150" alt="Мороженое в рожке с бананом">
+            </div>   
           </li>
         </ul>
       
         <footer class="footer-slider">
+          <ol class="pagination-mini">
+            <li class="pagination-mini-item">
+              <button class="pagination-link pagination-active button">
+                <span class="visually-hidden">Выбран первый вкус мороженого</span>
+              </button>
+            </li>
+            <li class="pagination-mini-item">
+              <button class="pagination-link button">
+                <span class="visually-hidden">Выбран второй вкус мороженого</span>
+              </button>
+            </li>
+            <li class="pagination-mini-item">
+              <button class="pagination-link button">
+                <span class="visually-hidden">Выбран третий вкус мороженого</span>
+              </button>
+            </li>           
+          </ol>
+
           <ul class="footer-social-slider">
             <li class="footer-social-item">
               <a class="footer-social-link footer-social-telegramm button" href="https://telegramm.com/htmlacademy">
@@ -236,6 +327,7 @@
           </div>
         </section>
       </div>
+
       <section class="footer-contacts-1">
         <h2 class="visually-hidden">Доставка</h2>
         <div class="delivery-inner">
@@ -270,7 +362,28 @@
             <a class="about-phone" href="tel:+78005558628">+7 800 555-86-28</a>
             <p class="about-time">(с 10 до 20 ежедневно)</p>
           </address>
-          <button class="footer-button button button-pink">Форма обратной связи</button>
+          <a class="footer-button button button-pink" href="#modalopen">Форма обратной связи</a>
+        </div>
+      </section>
+      <section class="modal" id="modalopen">
+        <h2 class="visually-hidden">Форма обратной связи</h2>
+        <div class="modal-window">
+          <a class="modal-window-close button" href="#modalclose"></a>
+          <form action="https://echo.htmlacademy.ru/" method="post">
+            <fieldset class="modal-window-inner">
+              <legend class="modal-window-title">Мы обязательно ответим вам!</legend>
+              <label aria-label="введите свои фамилию и имя">
+                <input class="modal-window-input" type="text" name="name" placeholder="Имя и фамилия" required>
+              </label>
+              <label aria-label="введите адрес электронной почты">
+                <input class="modal-window-input" type="email" name="mail" placeholder="email@example.com" required>
+              </label>
+              <label aria-label="введите комментарий по необходимости">
+                <textarea class="modal-window-input window-text" name="text" placeholder="В свободной форме"></textarea>
+              </label>
+              <button class="modal-window-button button-pink button" type="submit">Отправить</button>
+            </fieldset>
+          </form>
         </div>
       </section>
     </main>
