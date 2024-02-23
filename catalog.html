@@ -53,14 +53,64 @@
           <button class="button-search button-transparent button">
             <span class="visually-hidden">Поиск</span>
           </button>
-          <div></div>
+          <div class="navigation-item-inner navigation-form-search" id="search">
+            <label aria-label="введите поисковый запрос">
+              <input class="navigation-item-input" type="search" name="website-search" placeholder="Поиск по сайту">
+            </label>
+          </div>
         </li>
         <li class="navigation-item navigation-item-active">
           <button class="button-enter button-transparent button">Вход</button>
+          <div class="navigation-item-inner navigation-form-enter">
+            <form class="navigation-form" action="https://echo.htmlacademy.ru/" method="post">
+              <fieldset class="login">
+                <legend class="login-title">Личный кабинет</legend>
+                <label class="login-label" aria-label="введите адрес электронной почты">
+                  <input class="login-input" type="text" id="mail" name="mail" placeholder="email@example.com" required>
+                </label>
+                <label class="login-label" aria-label="введите пароль">
+                  <input class="login-input" type="text" id="password" name="password" placeholder="Пароль">
+                </label>
+                <button class="button-login button button-pink" type="submit">Войти</button>
+                <a class="login-link login-link-password" href="#">Забыли пароль?</a>
+                <a class="login-link login-link-login" href="#">Регистрация</a>
+              </fieldset>
+            </form>
+          </div>
         </li>
 
-        <li class="navigation-item navigation-item-active navigation-form-basket">
-          <button class="button-basket button-transparent button">Корзина</button>
+        <li class="navigation-item navigation-item-active full-basket">
+          <button class="button-basket-full button-transparent button">2&nbsp;товара</button>
+          <div class="navigation-item-inner navigation-form-basket">
+            <p class="basket-text">Корзина</p>
+            <ul class="navigation-basket-list">
+              <li class="goods">
+                  <img class="goods-img" src="images/ice-raspberry.jpg" width="46" height="46"
+                      alt="малинка">
+                  <div class="goods-info">
+                      <span class="goods-name">Малинка</span>
+                      <span class="goods-number">1 кг х 310 ₽</span>
+                  </div>
+                  <span class="goods-price">310 ₽</span>
+                  <button class="goods-button button"></button>
+              </li>
+              <li class="goods">
+                  <img class="goods-img" src="images/ice-bubblegum.jpg" width="46" height="46"
+                      alt="бабал-гам">
+                  <div class="goods-info">
+                      <span class="goods-name">Бабл-гам</span>
+                      <span class="goods-number">1 кг х 320 ₽</span>
+                  </div>
+                  <span class="goods-price">480 ₽</span>
+                  <button class="goods-button button"></button>
+              </li>
+          </ul>
+          <div class="navigaion-order-footer">
+              <button class="navigation-order-footer-button button-pink button" type="submit">Оформить
+                  заказ</button>
+              <span class="navigation-order-footer-total">Итого: 790 ₽</span>
+          </div>
+          </div>
         </li>
       </ul>
     </nav>
@@ -71,7 +121,7 @@
       <header class="inner-header">
         <ul class="breadcrumbs">
           <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link" href="index.html">Главная</a>
+            <a class="breadcrumbs-link" href="glacy.html">Главная</a>
           </li>
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link" href="catalog.html">Каталог</a>
@@ -359,7 +409,7 @@
         </ul>
       </section>
       <section class="catalog-slider">
-        <button class="catalog-button button">Показать ещё</button>
+        <button class="catalog-button button-white button">Показать ещё</button>
         <ul class="footer-inner-pagination">
           <li class="footer-pagination-item">
               <a class="footer-pagination-prev disabled">
