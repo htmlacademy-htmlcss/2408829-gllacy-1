@@ -46,7 +46,13 @@ a {
   font-size: 14px;
   text-decoration: none;
   color: inherit;
-  cursor: default;
+}
+
+input {
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 section {
@@ -58,7 +64,6 @@ ol {
   margin: 0;
   padding: 0;
   list-style-type: none;
-  cursor: default;
 }
 
 .visually-hidden {
@@ -80,11 +85,6 @@ ol {
 
 input:invalid {
   border-color: #B9B9B9;
-}
-
-input:hover:invalid,
-input:focus-visible:invalid {
-  outline: 2px solid #EA5454;
 }
 
 input:disabled {
@@ -117,7 +117,6 @@ body {
   font-weight: 400;
   color: #2D3440;
   background-color: #FEAFC3;
-  cursor: default;
 }
 
 .button {
@@ -129,7 +128,7 @@ body {
   border: none;
   border-radius: 26px;
   background-repeat: no-repeat;
-  cursor: default;
+  cursor: pointer;
 }
 
 .button-transparent {
@@ -165,7 +164,7 @@ body {
   text-decoration: none;
   outline: 4px solid rgba(252, 252, 252, 0.4);
   box-shadow: 0px 4px 12px rgba(45, 52, 64, 0.1);
-  cursor: default;
+  cursor: pointer;
 }
 
 .button-white:hover {
@@ -197,7 +196,7 @@ body {
   background-color: #FF2F64;
   outline: 4px solid rgba(255, 47, 100, 0.3);
   box-shadow: 0 4px 12px 1px rgb(45 52 64 / 10%);
-  cursor: default;
+  cursor: pointer;
 }
 
 .button-pink:hover {
@@ -388,7 +387,6 @@ body {
 
 .navigation-catalog-link {
   display: block;
-  width: 100%;
   height: 100%;
   font-size: 14px;
   line-height: 20px;
@@ -1074,7 +1072,7 @@ body {
   height: 24px;
   text-align: center;
   line-height: 1.5;
-  cursor: default;
+  cursor: pointer;
 }
 
 .footer-pagination-link {
@@ -1084,7 +1082,7 @@ body {
   border-radius: 50%;
   text-align: center;
   line-height: 1.5;
-  cursor: default;
+  cursor: pointer;
 }
 
 .pagination-current,
@@ -1094,10 +1092,11 @@ body {
 
 .footer-pagination-item {
   display: flex;
-  width: 24px;
-  height: 24px;
   flex-direction: column;
   align-items: center;
+}
+.footer-pagination-item:not(:last-child) {
+  margin-right: 2px;
 }
 
 .footer-pagination-link {
@@ -1111,7 +1110,7 @@ body {
 
 }
 
-.footer-pagination-item:hover {
+.footer-pagination-item:not(:last-child, :first-child):hover {
   background-color: rgba(252, 252, 252, 0.5);
 }
 
@@ -1774,7 +1773,7 @@ body {
   font-size: inherit;
   appearance: none;
   background-repeat: no-repeat;
-  cursor: default;
+  cursor: pointer;
   border: 2px;
 }
 
@@ -1854,7 +1853,7 @@ body {
   background: #FFFFFF;
   border: 6px solid #242424;
   border-radius: 50%;
-  cursor: default;
+  cursor: pointer;
 }
 
 .range-toggle:hover {
@@ -1898,7 +1897,7 @@ body {
 
 .fat-checkbox-control {
   padding-left: 27px;
-  cursor: default;
+  cursor: pointer;
 }
 
 .fat-control-input {
@@ -1935,8 +1934,7 @@ body {
   position: absolute;
   content: "";
   display: none;
-  left: 23.25%;
-  top: 28.25%;
+  transform: translateX(50%) translateY(50%);
   width: 6px;
   height: 6px;
   background-color: #2D3440;
@@ -1985,7 +1983,7 @@ body {
 
 .filler-checkbox-control {
   padding-left: 28px;
-  cursor: default;
+  cursor: pointer;
 }
 
 .filler-control-input {
@@ -2012,7 +2010,9 @@ body {
   border-radius: 20px;
   background-color: #FCFCFC4D;
 }
-
+.catalog-form-btn:hover{
+  outline: 4px solid #FCFCFC;
+}
 fieldset {
   margin: 0;
   padding: 0;
@@ -2095,9 +2095,10 @@ fieldset {
 .goods-button {
   position: relative;
   margin-left: auto;
-  width: 10px;
-  height: 10px;
-  background-image: url("../images/x.svg");
+  width: 40px;
+  height: 40px;
+  background-image: url(../images/x.svg);
+  background-position: center;
 }
 
 .navigaion-order-footer {
