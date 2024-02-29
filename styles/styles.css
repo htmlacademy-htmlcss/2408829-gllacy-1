@@ -1507,7 +1507,7 @@ body {
   padding-right: 0;
   background-repeat: no-repeat;
   border-radius: 16px;
-  background-image: url(../images/back-ground-2.jpg);
+  background-image: url("../images/back-ground-2.jpg");
   background-size: cover;
 }
 
@@ -1915,9 +1915,13 @@ body {
   border: 2px solid #2D3440;
 }
 
-.fat-control-type:hover {
+.fat-control-type:hover{
   border: 2px solid #FCFCFC;
 }
+input:focus + .fat-control-type {
+  border: 2px solid #FCFCFC;
+}
+
 
 .fat-control-type:disabled {
   border: 2px solid #000000;
@@ -1945,7 +1949,14 @@ body {
   background-color: #FCFCFC;
 }
 
+input:focus + .fat-control-type::before{
+  background-color: #FCFCFC;
+}
+
 .fat-control-type:disabled::before {
+  border: 2px solid #FCFCFC;
+}
+.fat-control-type:disabled:focus {
   border: 2px solid #FCFCFC;
 }
 
@@ -1974,6 +1985,14 @@ body {
 }
 
 .filler-checkbox-item-checkbox:hover .filler-control-input:checked+.filler-control-type {
+  background-image: url("../images/check-on-white.svg");
+}
+
+input:focus + .filler-control-type {
+  background-image: url("../images/checkbox-white.svg");
+}
+
+input:checked:focus + .filler-control-type {
   background-image: url("../images/check-on-white.svg");
 }
 
