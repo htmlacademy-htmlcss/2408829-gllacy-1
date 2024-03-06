@@ -33,39 +33,6 @@ html {
   cursor: default;
 }
 
-/*h1,
-h2,
-h3,
-p {
-  margin: 0;
-  padding: 0;
-}*/
-
-/*a {
-  font-family: inherit;
-  font-size: 14px;
-  text-decoration: none;
-  color: inherit;
-}*/
-
-/*input {
-  font-family: inherit;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-}
-
-section {
-  display: block;
-}
-
-ul,
-ol {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}*/
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -2241,7 +2208,8 @@ fieldset {
 
 .form-button {
   grid-column: 1 / -1;
-  justify-self: center
+  justify-self: center;
+  padding: 12px 32px;
 }
 
 .tooltip {
