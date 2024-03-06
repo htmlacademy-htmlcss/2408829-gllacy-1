@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <title>GllacyShop</title>
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="icon" href="./images/favicon.ico">
 </head>
 
 <body class="">
@@ -12,14 +13,14 @@
   <!--жёлтый фон body-yellow-->
   <header class="page-header general-layout">
     <a class="navigation-logo logo" href="index.html">
-      <img class="page-header-logo" src="./images/gllacy_shop_logo.jpg" width="137" height="56"
+      <img class="page-header-logo" src="./images/gllacy_shop_logo.svg" width="137" height="56"
         alt="Логотип магазина 'GllacyShop'.">
     </a>
 
     <nav class="navigation">
       <ul class="navigation-list">
         <li class="navigation-item navigation-item-catalog">
-          <button class="navigation-link">Каталог</button>
+          <a class="navigation-link" href="#!">Каталог</a>
           <ul class="navigation-catalog navigation-item-inner">
             <li class="navigation-in-catalog-item">
               <a class="navigation-catalog-link" href="#">Новинки</a>
@@ -128,7 +129,7 @@
             <h2 class="cone-product-card-title">Сливочное мороженое со вкусом банана</h2>
             <p class="cone-product-card-description">Сливочное мороженое с ярким банановым вкусом подарит вам свежесть и
               наслаждение даже в самый жаркий день. </p>
-            <button class="cone-product-card-button button-white button">Заказать</button>
+            <a class="cone-product-card-button button-white button" href="#!">Заказать</a>
           </div>
           <div class="slider-inner-picture">
             <img class="cone-product-card-image" src="images/cone2.jpg" width="306" height="507"
@@ -219,7 +220,7 @@
             <h3 class="gift-card-title">Малинка даром!</h3>
             <p class="gift-card-description">При покупке 2 кг любого фруктового мороженого добавим в ваш заказ банку
               малинового варенья бесплатно.</p>
-            <button class="gift-card-button button-white button">Хочу подарок</button>
+            <a class="gift-card-button button-white button" href="#!">Хочу подарок</a>
           </div>
           <div class="gift-card-second">
             <img class="gift-card-image" src="images/gift1.jpg" width="219" height="268" alt="Ягоды малины с рожком">
@@ -228,9 +229,9 @@
         <li class="gift-card">
           <div class="gift-card-first">
             <h3 class="gift-card-title">Маршмеллоу даром!</h3>
-            <p class="gift-card-description">При покупке 2 кг пломбира добавим <br> в ваш заказ упаковку нежных зефирок
+            <p class="gift-card-description">При покупке 2 кг пломбира добавим <br> в ваш заказ упаковку нежных зефирок <br>
               совершенно бесплатно.</p>
-            <button class="gift-card-button button-white button">Хочу подарок</button>
+            <a class="gift-card-button button-white button" href="#!">Хочу подарок</a>
           </div>
           <div class="gift-card-second">
             <img class="gift-card-image" src="images/gift2.jpg" width="219" height="268" alt="Маршмеллоу с рожком">
@@ -250,9 +251,9 @@
           </a>
           <div class="footer-card">
             <b class="product-card-price">310 ₽/кг</b>
-            <button class="product-card-button button-pink button">
+            <a class="product-card-button button-pink button" href="#!">
               <span class="visually-hidden">Добавить в корзину</span>
-            </button>
+            </a>
           </div>
         </li>
         <li class="product-card">
@@ -263,9 +264,9 @@
           </a>
           <div class="footer-card">
             <b class="product-card-price">340 ₽/кг</b>
-            <button class="product-card-button button-pink button">
+            <a class="product-card-button button-pink button" href="#!">
               <span class="visually-hidden">Добавить в корзину</span>
-            </button>
+            </a>
           </div>
         </li>
         <li class="product-card">
@@ -276,9 +277,9 @@
           </a>
           <div class="footer-card">
             <b class="product-card-price">330 ₽/кг</b>
-            <button class="product-card-button button-pink button">
+            <a class="product-card-button button-pink button" href="#!">
               <span class="visually-hidden">Добавить в корзину</span>
-            </button>
+            </a>
           </div>
         </li>
         <li class="product-card">
@@ -289,9 +290,9 @@
           </a>
           <div class="footer-card">
             <b class="product-card-price">320 ₽/кг</b>
-            <button class="product-card-button button-pink button">
+            <a class="product-card-button button-pink button" href="#!">
               <span class="visually-hidden">Добавить в корзину</span>
-            </button>
+            </a>
           </div>
         </li>
       </ul>
@@ -348,7 +349,9 @@
         <p class="delivery-advice">Хочется полакомиться любимым десертом, <br> но нет времени съездить в магазин?
           Закажите доставку мороженого на дом, и курьер привезёт вам ваш заказ в течение часа!</p>
       </div>
-      <form class="delivery-contacts-address contact-form">
+
+
+     <!-- <form class="delivery-contacts-address contact-form">
         <p class="delivery-contacts-advice">Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить
           заказ.</p>
         <div class="contact-form-name form-date">
@@ -365,6 +368,51 @@
             required>
         </div>
         <button class="footer-button button-pink button">Отправить</button>
+      </form>-->
+
+      <form class="delivery-form" action="http://htmlacademy.ru" method="post">
+        <p class="form-description">Укажите адрес и дату доставки, и мы свяжемся с&nbsp;вами, чтобы подтвердить
+          заказ.
+        </p>
+        <p class="form-group">
+          <span class="form-label">
+            <label for="form-label">Дата</label>
+            <span class="tooltip">
+              <button class="tooltip-toggle" type="button">
+                <svg class="tooltip-icon" width="14" height="14" fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M7 2.125a4.875 4.875 0 1 0 0 9.75 4.875 4.875 0 0 0 0-9.75ZM.792 7a6.209
+              6.209 0 1 1 12.417 0A6.209 6.209 0 0 1 .792 7ZM7 6.333c.368 0 .667.299.667.667v2.217a.667.667 0 0 1-1.334 0V7c0-.368.299-.667.667-.667Zm0-2.216A.667.667
+              0 0 0 7 5.45h.006a.667.667 0 0 0 0-1.333H7Z" />
+                </svg></button>
+              <span class="tooltip-text">Укажите желаемую дату</span>
+            </span>
+          </span>
+          <input class="field" id="form-date" type="text" name="form-date" placeholder="01.04.2020">
+        </p>
+        <p class="form-group">
+          <label for="form-label">Телефон</label>
+          <input class="field" id="form-phone" type="tel" name="form-phone" placeholder="+7 800 999-00-00">
+        </p>
+        <p class="form-group form-group-full">
+          <span class="form-label">
+            <label for="form-label">Адрес</label>
+            <span class="tooltip">
+              <button class="tooltip-toggle" type="button">
+                <svg class="tooltip-icon" width="14" height="14" fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M7 2.125a4.875 4.875 0 1 0 0 9.75 4.875 4.875 0 0 0 0-9.75ZM.792 7a6.209
+            6.209 0 1 1 12.417 0A6.209 6.209 0 0 1 .792 7ZM7 6.333c.368 0 .667.299.667.667v2.217a.667.667 0 0 1-1.334 0V7c0-.368.299-.667.667-.667Zm0-2.216A.667.667
+            0 0 0 7 5.45h.006a.667.667 0 0 0 0-1.333H7Z" />
+                </svg>
+              </button>
+              <span class="tooltip-text">Введите название улицы, дома и квартиры</span>
+            </span>
+          </span>
+          <input class="field" id="form-address" type="text" name="form-address"
+            placeholder="ул. Большая Конюшенная, 19/8">
+        </p>
+        <button class="button button-important form-button" type="submit">Отправить</button>
       </form>
     </section>
 
@@ -375,7 +423,7 @@
           <p class="about-text"> Адрес главного офиса <br> и офлайн-магазина:</p>
           <p class="about-address">наб. реки Карповки, <br> 5 лит П, Санкт-Петербург</p>
           <p class="about-text">Для заказов по телефону</p>
-          <a class="about-phone" href="tel:+78005558628">+7 (812) 812-12-12</a>
+          <a class="about-phone" href="tel:+78005558628>">+7 (812) 812-12-12<br></a>
           <p class="about-time">(с 10 до 20 ежедневно)</p>
         </address>
         <a class="footer-button button button-pink" href="#modalopen">Форма обратной связи</a>
@@ -441,7 +489,7 @@
     </ul>
 
     <div class="footer-copyright">
-      <img class="copyright-logo" src="./images/logo-htmlacademy.png" width="93" height="27" alt="HTML Academy">
+      <img class="copyright-logo" src="./images/logo-htmlacademy.svg" width="93" height="27" alt="HTML Academy">
       <p class="copyright-text">Сделано в <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html
           academy © 2024 </a>
       </p>
