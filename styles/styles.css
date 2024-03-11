@@ -441,7 +441,7 @@ body {
 }
 
 .navigation-form-basket {
-  right:0;
+  right: 0;
   min-width: 344px;
   top: calc(100% + 8px);
   padding: 50px;
@@ -669,7 +669,7 @@ body {
 .product-card-price {
   margin-left: -3px;
   margin-right: auto;
-  margin-top:-17px;
+  margin-top: -17px;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
@@ -786,7 +786,7 @@ body {
   gap: 16px;
   position: relative;
   top: -11px;
-  left: -45px;
+  left: 0px;
   margin-left: auto;
   margin-right: 0;
   list-style-type: none;
@@ -851,7 +851,9 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
-  margin-bottom: 18px;
+  margin: 0;
+  margin-top: 10px;
+  margin-bottom: 24px;
 }
 
 .main-inner .product-card-title {
@@ -1088,9 +1090,7 @@ body {
   flex-direction: column;
   align-items: center;
 }
-.footer-pagination-item:not(:last-child) {
-  margin-right: 2px;
-}
+
 
 .footer-pagination-link {
   min-width: 24px;
@@ -1122,7 +1122,7 @@ body {
 .footer-inner-pagination {
   display: flex;
   align-items: center;
-
+  margin: 0;
 }
 
 .catalog-button:hover {
@@ -1134,7 +1134,7 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 80px;
+  margin-bottom: 84px;
 }
 
 .gift-card-description {
@@ -1166,7 +1166,7 @@ body {
   display: block;
   background-color: #FCFCFC;
   background-image: url("../images/wafel.jpg");
-  padding: 24px;
+  padding: 21px;
   border-radius: 26px;
   background-size: cover;
 }
@@ -1258,12 +1258,30 @@ body {
 }
 
 .page-footer {
-  display: flex;
-  width: unset;
-  height: 153px;
-  padding: 0 98px;
+  padding-top: 27px;
+  padding-bottom: 48px;
+  margin: auto;
+  width: 1170px;
+  /*display: flex;
+  padding: 26px 0 0 0px;
   justify-content: center;
   align-items: center;
+  grid-gap: 242px;*/
+}
+.page-footer-container {
+  display: flex;
+  width: 1170px;
+  margin: 0 auto;
+}
+.social {
+  margin-top: 22px;
+  margin-right: 237px;
+}
+
+.footer-wrapper {
+  display: flex;
+  align-items: flex-start;
+  gap: 259px;
 }
 
 .page-footer .htmlacademy-link {
@@ -1297,7 +1315,8 @@ body {
 
 .blog-title {
   color: #565C66;
-  margin-bottom: 12px;
+  margin: 0;
+
 }
 
 .blog-link {
@@ -1310,6 +1329,7 @@ body {
   text-align: left;
   display: block;
   width: 303px;
+  margin: 10px 0 0 0;
 }
 
 .mailing {
@@ -1340,6 +1360,7 @@ body {
   max-width: 570px;
   max-height: 224px;*/
 }
+
 .newsletter-form {
   display: grid;
   grid-template-columns: 1fr 152px;
@@ -1352,6 +1373,8 @@ body {
   line-height: 22px;
   font-weight: 400;
   color: #565C66;
+  margin: 0;
+  padding: 0;
   margin-bottom: 42px;
 
 }
@@ -1388,6 +1411,8 @@ body {
   display: flex;
   flex-wrap: wrap;
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .newsletter-advice .newsletter-description {
@@ -1437,24 +1462,27 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 16px;
-  padding: 64px 64px 86px 100px;
+  padding: 64px 64px 64px 100px;
 }
 
 .delivery-inner {
-  padding-top: 8px;
+  padding-top: 16px;
 }
 
 .delivery-title {
   font-size: 32px;
   line-height: 46px;
   font-weight: 900;
-  margin-bottom: 24px;
+  margin: 0;
+  padding: 0px 0 0 0;
 }
 
 .delivery-advice {
   font-size: 16px;
   line-height: 22px;
   font-weight: 400;
+  padding: 0;
+  margin: 23px 0 0 0;
 }
 
 .delivery-contacts-address {
@@ -1526,7 +1554,7 @@ body {
 .contacts-inner {
   background: #FCFCFC;
   border-radius: 8px;
-  padding: 40px;
+  padding: 30px 40px 61px;
   box-shadow: 0 8px 16px 0 rgba(45, 52, 64, 0.12);
 }
 
@@ -1547,7 +1575,8 @@ body {
   line-height: 24px;
   font-weight: 700;
   display: inline-block;
-  margin: 0;
+  margin: 0 0 7px 0;
+  min-width: 263px;
 }
 
 .about-phone {
@@ -1569,6 +1598,8 @@ body {
 
 .footer-button {
   padding: 11px 32px;
+  list-style: none;
+  text-decoration: none;
 }
 
 .modal:target {
@@ -1662,21 +1693,33 @@ body {
 }
 
 .footer-social-fb {
-  background-image: url(../images/fb.svg);
+  background-image: url("../images/fb.svg");
 }
 
 .footer-social-1 {
-  margin-right: 318px;
+  margin: -7px 0 0 -2px;
+  padding: 0;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 16px;
+  /*margin-top: -26px;
+  margin-left: 17px;*/
 }
 
+.footer-copyright {
+  margin-top: 15px;
+  
+  margin-left: auto;
+  max-width: 196px;
+}
+.footer-info-item{
+  margin: 0;
+  padding: 0;
+}
 .footer-info {
   display: grid;
+  padding: 0 40px 19px 46px;
   grid-template-columns: repeat(2, auto);
-  margin: 0;
-  margin-right: 200px;
   min-width: 356px;
   row-gap: 8px;
   list-style: none;
@@ -1691,8 +1734,15 @@ body {
 }
 
 .footer-info-link {
-  color:#2D3440;
+  color: #2D3440;
   text-decoration: none;
+  font-family: inherit;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  padding: 0;
+  margin: 0;
 }
 
 .footer-heart {
@@ -1940,10 +1990,11 @@ body {
   border: 2px solid #2D3440;
 }
 
-.fat-control-type:hover{
+.fat-control-type:hover {
   border: 2px solid #FCFCFC;
 }
-input:focus + .fat-control-type {
+
+input:focus+.fat-control-type {
   border: 2px solid #FCFCFC;
 }
 
@@ -1974,13 +2025,14 @@ input:focus + .fat-control-type {
   background-color: #FCFCFC;
 }
 
-input:focus + .fat-control-type::before{
+input:focus+.fat-control-type::before {
   background-color: #FCFCFC;
 }
 
 .fat-control-type:disabled::before {
   border: 2px solid #FCFCFC;
 }
+
 .fat-control-type:disabled:focus {
   border: 2px solid #FCFCFC;
 }
@@ -2012,14 +2064,6 @@ input:focus + .fat-control-type::before{
 }
 
 .filler-checkbox-item-checkbox:hover .filler-control-input:checked+.filler-control-type {
-  background-image: url("../images/check-on-white.svg");
-}
-
-input:focus + .filler-control-type {
-  background-image: url("../images/checkbox-white.svg");
-}
-
-input:checked:focus + .filler-control-type {
   background-image: url("../images/check-on-white.svg");
 }
 
@@ -2056,9 +2100,11 @@ input:checked:focus + .filler-control-type {
   border-radius: 20px;
   background-color: #FCFCFC4D;
 }
-.catalog-form-btn:hover{
+
+.catalog-form-btn:hover {
   outline: 4px solid #FCFCFC;
 }
+
 fieldset {
   margin: 0;
   padding: 0;
@@ -2168,27 +2214,32 @@ fieldset {
   font-style: normal;
   font-weight: 400;
   line-height: 16px;
+  margin: 0;
+  margin-top: 10px;
+  color: #2D3440;
 }
+
 /*исправленная доставка*/
 .delivery-form {
   grid-template-columns: 117px 287px;
   margin: 0;
   padding: 40px;
   display: grid;
-  gap: 32px 16px;
+  gap: 30px 15px;
   background-color: #FCFCFC;
   border-radius: 8px;
 }
+
 .form-description {
   grid-column: 1 / -1;
   color: #565C66;
-  margin: 0;
+  margin: 3px 6px 0 -5px;
 }
 
 .form-group {
   display: flex;
   flex-direction: column;
-  margin: 0;
+  margin: 5px 0 0 -4px;
   font-weight: 700;
   gap: 8px;
 }
@@ -2252,10 +2303,11 @@ fieldset {
   filter: drop-shadow(0 4px 8px rgba(194, 194, 194, 0.20));
 }
 
-.tooltip-toggle:hover + .tooltip-text,
-.tooltip-toggle:focus + .tooltip-text {
+.tooltip-toggle:hover+.tooltip-text,
+.tooltip-toggle:focus+.tooltip-text {
   display: block;
 }
+
 .field {
   font-family: inherit;
   font-weight: 400;
